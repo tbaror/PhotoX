@@ -34,6 +34,10 @@ $(document).ready(function() {
     $(this).addClass('active-item').siblings().removeClass
     ('active-item');
    });
+
+   $('.carousel').carousel({
+    interval: 2000
+  })
 });
 
 
