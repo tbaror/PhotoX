@@ -5,8 +5,7 @@ body {
 /*header*/
 header {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)),  url(images/header-img.jpeg) no-repeat center center 
-  /cover;
+  background: linear-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .5)),  url(images/header-img.jpeg) no-repeat center /cover;
 }
 /*navbar*/
 .nav-menu {
@@ -190,7 +189,7 @@ color: #70aed2;
 
 /* Pricing */
 .card-1, .card-2, .card-3 {
-  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url("images/pricing-card-bg.jpeg") center no-repeat /cover;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .5)), url("images/pricing-card-bg.jpeg") center no-repeat;
   box-shadow: 7px 18px 50px #555;
   max-width: 400px;
 }
@@ -264,6 +263,77 @@ color: #70aed2;
   }
 }
 /* End of Pricing */
+
+/* Contacts */
+
+.contact {
+  background: linear-gradient(105deg,
+          rgba(21, 31, 32, 1) 0%,
+          rgba(21, 31, 32, .95) 50%,
+          transparent 60%),
+          url(images/form-img.jpeg) center center no-repeat;
+}
+
+.input {
+ background: transparent;
+ border-color: transparent;
+ border-bottom: 2px solid #ccc;
+ border-radius: 0;
+ transition: all .8s;
+
+}
+
+.input:focus {
+  background: transparent;
+ border-color: transparent;
+ box-shadow: none;
+ color: #fff;
+ border-bottom: 2px solid #f5593d;
+
+}
+
+.submit-button {
+  background: #f5593d;
+  color: #eee;
+  transition: all .3s;
+}
+
+.submit-button:hover {
+
+  background: #f9793d;
+  transform: translateY(-3px);
+
+}
+
+.label {
+
+  color: #777;
+  display: block;
+  margin-top: -70px;
+  margin-left: 4px;
+  font-size: 13px;
+  transition: all .3s;
+}
+
+.input:placeholder-shown + .label {
+
+  transform: translate(20px, 20px);
+  opacity: 0;
+  visibility: hidden;
+}
+
+@media (max-width 992px) {
+  .contact {
+    background: linear-gradient(rgba(21, 31, 32, 1),
+    rgba(21, 31, 32, .95));
+  }
+  .contact-form {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* End Of Contacts */
 
 
 
